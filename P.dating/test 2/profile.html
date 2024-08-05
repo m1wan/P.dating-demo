@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Simple Social Network</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>User Profile</h1>
+        </header>
+        <main>
+            <div class="profile-container">
+                <div class="profile-header">
+                    <img id="profileAvatar" src="images/default-avatar.png" alt="User Avatar" class="avatar">
+                    <h2 id="profileUsername"></h2>
+                </div>
+                <div class="profile-posts">
+                    <h3>User Posts</h3>
+                    <div id="userPosts">
+                        <!-- Bài viết của người dùng sẽ được hiển thị ở đây -->
+                    </div>
+                </div>
+            </div>
+        </main>
+        <button onclick="goToHome()">Back to Home</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

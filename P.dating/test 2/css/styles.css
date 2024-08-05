@@ -1,0 +1,486 @@
+/* Định dạng tổng thể */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+header {
+  background-color: #c0392b; /* Màu đỏ */
+  color: white;
+  padding: 10px 0;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.left-column, .right-column, .center-column {
+  padding: 20px;
+}
+
+.left-column {
+  width: 25%;
+}
+
+.center-column {
+  width: 50%;
+}
+
+.right-column {
+  width: 25%;
+}
+
+.user-profile {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.user-profile h2 a {
+  color: #c0392b;
+  text-decoration: none;
+}
+
+.user-profile h2 a:hover {
+  text-decoration: underline;
+}
+
+.post-section {
+  margin-bottom: 20px;
+}
+
+.post-section textarea {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.post-section button {
+  background-color: #c0392b; /* Màu đỏ */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.post-section button:hover {
+  background-color: #e74c3c; /* Màu đỏ nhạt hơn */
+}
+
+.posts .post {
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.right-column button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #c0392b; /* Màu đỏ */
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.right-column button:hover {
+  background-color: #e74c3c; /* Màu đỏ nhạt hơn */
+}
+
+/* Định dạng cho trang index */
+.form-container {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.form-box {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 45%;
+}
+
+.form-box h2 {
+  margin-top: 0;
+}
+
+.form-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-box button {
+  width: 100%;
+  padding: 10px;
+  background-color: #c0392b;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-box button:hover {
+  background-color: #e74c3c;
+}
+
+/* Định dạng cho trang profile */
+.profile-container {
+  width: 60%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.profile-header {
+  margin-bottom: 20px;
+}
+
+.profile-posts .post {
+  text-align: left;
+}
+
+/* Định dạng cho trang settings */
+.settings-container {
+  width: 60%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.settings-container h2 {
+  margin-top: 0;
+}
+
+.settings-container input[type="file"] {
+  display: block;
+  margin: 10px 0;
+}
+
+.settings-container button {
+  display: block;
+  background-color: #c0392b;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.settings-container button:hover {
+  background-color: #e74c3c;
+}
+
+/* Định dạng cho trang search */
+.search-container {
+  width: 60%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.search-container input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-container button {
+  background-color: #c0392b;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background-color: #e74c3c;
+}
+
+/* Định dạng cho trang messages */
+.messages-container {
+  width: 60%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.message-list {
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.message-list .message {
+  background-color: #f4f4f9;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.message-box textarea {
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.message-box button {
+  background-color: #c0392b;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.message-box button:hover {
+  background-color: #e74c3c;
+}
+
+/* Định dạng cho trang forgot-password */
+.forgot-password-container {
+  width: 60%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.forgot-password-container input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.forgot-password-container button {
+  background-color: #c0392b;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.forgot-password-container button:hover {
+  background-color: #e74c3c;
+}
+/* Định dạng cho container chính */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Định dạng cho các cột */
+.left-column, .center-column, .right-column {
+  padding: 10px;
+}
+
+.left-column {
+  width: 20%;
+  float: left;
+}
+
+.center-column {
+  width: 60%;
+  float: left;
+}
+
+.right-column {
+  width: 20%;
+  float: left;
+}
+
+/* Định dạng cho ảnh đại diện */
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+/* Định dạng cho phần đăng bài */
+.post-section {
+  margin-bottom: 20px;
+}
+
+/* Định dạng cho bài viết */
+.post {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Định dạng cho hình ảnh trong bài viết */
+.post img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Định dạng cho văn bản bài viết */
+.post p {
+  text-align: left;
+  margin-top: 10px;
+}
+
+/* Định dạng cho các nút */
+button {
+  margin: 5px;
+}
+
+/* Định dạng cho thanh tìm kiếm */
+.search-result {
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Định dạng cho tin nhắn */
+.message-list .message {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+/* Định dạng cho container chính */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Định dạng cho các cột */
+.left-column, .center-column, .right-column {
+  padding: 10px;
+}
+
+.left-column {
+  width: 20%;
+  float: left;
+}
+
+.center-column {
+  width: 60%;
+  float: left;
+}
+
+.right-column {
+  width: 20%;
+  float: left;
+}
+
+/* Định dạng cho ảnh đại diện */
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+/* Định dạng cho phần đăng bài */
+.post-section {
+  margin-bottom: 20px;
+}
+
+/* Định dạng cho bài viết */
+.post {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+/* Định dạng cho ảnh trong bài viết và ảnh xem trước */
+.post img, #postImagePreview {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Khung vuông cho ảnh xem trước */
+.image-preview-container {
+  width: 300px; /* Kích thước khung vuông cố định */
+  height: 300px; /* Kích thước khung vuông cố định */
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+/* Định dạng cho hình ảnh trong khung vuông */
+.image-preview-container img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+
+/* Định dạng cho văn bản bài viết */
+.post p {
+  text-align: left;
+  margin-top: 10px;
+}
+
+/* Định dạng cho các nút */
+button {
+  margin: 5px;
+}
+
+/* Định dạng cho thanh tìm kiếm */
+.search-result {
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Định dạng cho tin nhắn */
+.message-list .message {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}

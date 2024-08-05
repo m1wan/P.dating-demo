@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages - Simple Social Network</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Messages</h1>
+        </header>
+        <main>
+            <div class="messages-container">
+                <div class="message-list">
+                    <!-- Danh sách tin nhắn sẽ được hiển thị ở đây -->
+                </div>
+                <div class="message-box">
+                    <textarea id="messageContent" placeholder="Type your message..."></textarea>
+                    <button onclick="sendMessage()">Send</button>
+                </div>
+            </div>
+        </main>
+        <button onclick="goToHome()">Back to Home</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

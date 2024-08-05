@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings - Simple Social Network</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Settings</h1>
+        </header>
+        <main>
+            <div class="settings-container">
+                <h2>Change Profile Picture</h2>
+                <input type="file" id="profilePicture" accept="image/*" onchange="changeProfilePicture()">
+                <img id="profilePicturePreview" src="images/default-avatar.png" alt="Profile Picture Preview" class="avatar">
+                <button onclick="saveProfilePicture()">Save Profile Picture</button>
+                <h2>Change Password</h2>
+                <input type="password" id="newPassword" placeholder="New Password">
+                <button onclick="changePassword()">Change Password</button>
+                <button onclick="logout()">Logout</button>
+            </div>
+        </main>
+        <button onclick="goToHome()">Back to Home</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

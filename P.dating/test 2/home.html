@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home nke</title>
+    <!-- Liên kết tới tệp CSS để định dạng trang web -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>ẳng ẳng hú hú khẹc khẹc</h1>
+        </header>
+        <main>
+            <!-- Cột bên trái chứa thông tin người dùng -->
+            <div class="left-column">
+                <div class="user-profile">
+                    <!-- Ảnh đại diện của người dùng -->
+                    <img id="userAvatar" src="images/default-avatar.png" alt="User Avatar" class="avatar">
+                    <!-- Tên người dùng, nhấp vào để đi tới trang hồ sơ cá nhân -->
+                    <h2><a href="#" onclick="goToProfile()"><span id="loggedInUserName"></span></a></h2>
+                </div>
+            </div>
+            <!-- Cột giữa chứa phần đăng bài và hiển thị các bài viết -->
+            <div class="center-column">
+                <div class="post-section">
+                    <!-- Phần nhập nội dung bài viết -->
+                    <textarea id="postContent" placeholder="What's on your mind?" style="width: 100%;"></textarea>
+                    <!-- Phần chọn ảnh để đăng kèm bài viết -->
+                    <input type="file" id="postImage" accept="image/*" onchange="previewImage(event)">
+                    <!-- Hiển thị ảnh xem trước -->
+                    <img id="postImagePreview" src="" alt="Image Preview" style="display:none; width: 100%; margin-top: 10px;">
+                    <!-- Nút để đăng bài -->
+                    <button onclick="addPost()">Post</button>
+                </div>
+                <!-- Phần hiển thị các bài viết -->
+                <div id="posts" class="posts">
+                    <!-- Bài viết sẽ được hiển thị ở đây -->
+                </div>
+            </div>
+            <!-- Cột bên phải chứa các chức năng khác -->
+            <div class="right-column">
+                <button onclick="goToSettings()">Settings</button>
+                <button onclick="goToMessages()">Messages</button>
+                <button onclick="goToSearch()">Search</button>
+                <button onclick="logout()">Logout</button>
+            </div>
+        </main>
+    </div>
+    <!-- Liên kết tới tệp JavaScript để xử lý logic của trang web -->
+    <script src="js/script.js"></script>
+</body>
+</html>

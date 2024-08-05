@@ -1,0 +1,129 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"],
+button {
+    display: block;
+    width: calc(100% - 20px);
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 1em;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+a {
+    color: #4CAF50;
+}
+
+/* Quy tắc cho avatar */
+#profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover; /* Đảm bảo ảnh phù hợp với khung */
+    display: block;
+    margin: 20px auto;
+}
+/* Thêm các quy tắc cho giao diện chat */
+#chat-box {
+    border: 1px solid #ddd;
+    padding: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-bottom: 10px;
+}
+
+#chat-box .message {
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+}
+
+#chat-box .message.sent {
+    text-align: right;
+    background-color: #e6ffe6;
+}
+
+#chat-box .message.received {
+    text-align: left;
+    background-color: #f2f2f2;
+}
+
+#message-input {
+    width: calc(100% - 70px);
+}
+/* CSS cho trang chat */
+.chat-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.chat-button-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.chat-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chat-button:hover {
+    background-color: #0056b3;
+}
+.logo{
+    color: red;
+}
+/* đưa login và register sang bên phải*/
+.login_homepage{
+    position: fixed;
+    bottom: 80%;
+    right:15%;
+}
+.register_homepage{
+    position: fixed;
+    bottom:78%;
+    right: 15%;
+}
+.change_password{
+    
+}
